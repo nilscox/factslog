@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack",
-    "test": "NODE_ENV=test jest"
+    "test": "NODE_ENV=test jest",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -27,8 +28,13 @@
     "@types/react-dom": "^16.9.8",
     "@types/webpack": "^4.41.22",
     "@types/webpack-dev-server": "^3.11.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "html-webpack-plugin": "^4.4.1",
     "jest": "^26.4.2",
     "react-refresh": "^0.8.3",
