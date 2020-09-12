@@ -7,10 +7,27 @@
   "env": {
     "development": {
       "presets": [
-        ["@babel/preset-react", { "development": true }]
+        [
+          "@babel/preset-react",
+          {
+            "development": true
+          }
+        ]
       ],
       "plugins": [
         "react-refresh/babel"
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
       ]
     }
   }
