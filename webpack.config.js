@@ -1,6 +1,4 @@
 import path from 'path';
-import webpack from 'webpack';
-import {} from 'webpack-dev-server';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 
@@ -13,7 +11,7 @@ const {
 const dev = NODE_ENV === 'development';
 const prod = NODE_ENV === 'production';
 
-const config: webpack.Configuration = {
+const config = {
 
   mode: prod ? 'production' : 'development',
   devtool: dev ? 'source-map' : false,
