@@ -1,6 +1,6 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const {
   NODE_ENV = 'development',
@@ -11,7 +11,7 @@ const {
 const dev = NODE_ENV === 'development';
 const prod = NODE_ENV === 'production';
 
-const config = {
+module.exports = {
 
   mode: prod ? 'production' : 'development',
   devtool: dev ? 'source-map' : false,
@@ -54,5 +54,3 @@ const config = {
   },
 
 };
-
-export default config;
