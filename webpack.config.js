@@ -39,6 +39,18 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.svg$/,
+        use: ['react-svg-loader'],
+      },
+      {
+        test: /\.jpg$/,
+        use: ['file-loader'],
+      },
     ],
   },
 

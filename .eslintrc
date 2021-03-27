@@ -29,13 +29,14 @@
   "rules": {
     "no-console": "off",
     "sort-imports": "off",
-    "simple-import-sort/sort": ["warn", {
+    "simple-import-sort/imports": ["warn", {
       "groups": [
         ["^react$", "^react-dom$"],
         ["^@?[a-z]"],
         ["^src/"],
         ["^../", "^./"]
       ]
-    }]
+    }],
+    "react/prop-types": "off"
   }
 }
